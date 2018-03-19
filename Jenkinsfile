@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'SLAVE-W10-NEOLIANS'
-    }
-    
-  }
+  agent any
   stages {
     stage('error') {
       steps {
