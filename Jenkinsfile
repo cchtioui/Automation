@@ -6,9 +6,9 @@ pipeline {
     
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        build(job: 'CreativeIT-CT', propagate: true, quietPeriod: 12, wait: true)
+        build(job: 'CreativeIT-CT', quietPeriod: 12)
       }
     }
   }
